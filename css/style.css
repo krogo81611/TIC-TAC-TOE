@@ -1,0 +1,63 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+.gameBoardContainer{
+  
+  width: 500px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+div {
+  height: 150px;
+  width: 150px;
+  
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+.gameBoardContainer, .container {
+  display: flex;
+}
+
+.container {
+  justify-content: space-evenly;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+h1 {
+  text-align: center;
+}
+
+.topLeft, .topMiddle, .midLeft, .middle, .botLeft, .botMid {
+  border-right: 3px solid black;
+}
+
+
+.topRight, .topLeft, .topMiddle, .midLeft, .midRight, .middle {
+  border-bottom: 3px solid black;
+}
+
